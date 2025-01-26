@@ -20,20 +20,20 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '949657126').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/mladminbot") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002239900635'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002134871596''))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/JisshuMovieZone')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001176901973 -1002096410592').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://deadpool:3hTC1Wh4SWiSiMDC@cluster0.h60bl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "maxine11229")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'My_Tg_files')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://johnwickk11220:3vsFKjA8I5Cljc8K@cluster0.uevz8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "johnwickk11220")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Movie_Loverz')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002239900635'))  # set shortner log channel
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002134871596''))  # set shortner log channel
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0')) # The movie you upload in it will be deleted from the bot.
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002239900635'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002134871596'))
 auth_channel = environ.get('AUTH_CHANNEL', '-1001622914589')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002077293491'))
 request_channel = environ.get('REQUEST_CHANNEL', '-1002239900635') # If anyone sends a request message to your bot, you will get it in this channel.
@@ -107,7 +107,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("FQDN", "thoughtful-shayne-mlfiles-5730e5e6.koyeb.app/")
+URL = environ.get("FQDN", "https://www.movieloverzz.my.id/")
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
