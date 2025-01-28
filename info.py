@@ -97,17 +97,17 @@ LINK_MODE = is_enabled('LINK_MODE', True)
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or Flase
+STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or Flase
 # Online Stream and Download
 
 MULTI_CLIENT = False
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
-    ON_HEROKU = False 
+    ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("FQDN", "https://loki-22jan-v1-6c55a0ec51f.herokuapp.com/")
+URL = environ.get("FQDN", "https://loki-28jan-0b8bedaeaa60.herokuapp.com/")
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
